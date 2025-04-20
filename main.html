@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here come a thought...</title>
+    <link rel="stylesheet" href="rants-style.css">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+10&family=Roboto+Mono:wght@100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="box-expand">
+    <input type="checkbox" name="expand" id="expand-checkbox">
+    <span id ="label-checkbox-expand">Expand</span>
+</div>
+<!-- <div id="vign"></div> -->
+<div id="nav-bar">
+    <img src="/Video/Untitled.svg" id="logo">
+    <a id="home-link" href="/index.html">Home</a>
+</div>
+<div class="container">         <!--If you want ot add a new post just copy the format time then write-->
+    <div class = "content-boxes">
+        <h1>Vận dụng sgk/130 (prime)</h1>
+        <p><pre>
+        def isPrime(n):
+            if n < 2 :
+                return False
+            c = 0
+            k = 2
+            while k < n:
+                if n % k == 0:
+                    return False
+                k += 1
+            return True
+        </pre></p>
+    </div>
+    <div class = "content-boxes">
+        <h1>Vận dụng sgk/130 (2)</h1>
+        <p><pre>
+        def Num(s):
+            c = 0 
+            for i in s:
+                if "0" <= i <="9":
+                    c += 1
+            return c
+        def char(s):
+            c = 0 
+            for i in s:
+                if "a" <= i.lower() <= "z":
+                    c += 1
+            return c
+        
+        xau = input("Nhap xau ki tu: ")
+        
+        print(Num(xau), char(xau))
+        </pre></p>
+    </div>
+    <div class = "content-boxes">
+        <h1>Luyện tập sgk/135 ^_____^</h1>
+        <p><pre>
+            #1
+            def power(a,b,c):
+                return (a+b)**c
+            #2
+            def sum(a,b):
+                print( int(a)+int(b))
+            n = input("Nhap 2 so ").split()
+            sum(n[0], n[1])
+        </pre></p>
+    </div>
+    <div class="content-boxes">
+        <h1>Vận dụng sgk/ 135 🩵🪄</h1>
+        <p>
+        <pre>
+            #1
+            def UCLN(a,b):
+                a = int(a)
+                b = int(b)
+                while a != b:   
+                    if a > b:
+                        a = a - b
+                    elif b > a:
+                        b = b - a
+                print(a)
+
+                xau = input("nhap so: ").split()
+                UCLN(xau[0],xau[1])
+            #2
+            def change(ho_ten, c):
+                if c == 0:
+                    return(ho_ten.upper())
+                else:
+                    return(ho_ten.lower())
+            
+
+
+        </pre>
+        </p>
+    </div>
+</div>      
+</div>  
+
+    <img src="/Video/equestria_background.svg" id="back-image">
+    <script src="main.js"></script>
+</body>
+</html>
